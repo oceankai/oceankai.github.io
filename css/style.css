@@ -89,6 +89,22 @@ td {
 a img {
   border: none;
 }
+/* custom Font*/
+@font-face {
+  font-family: "covered_by_your_graceregular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/coveredbyyourgrace-webfont.eot");
+  src: url("../font/coveredbyyourgrace-webfont.eot?#iefix") format('embedded-opentype'), url("../font/coveredbyyourgrace-webfont.svg#covered_by_your_graceregular") format('svg'), url("../font/coveredbyyourgrace-webfont.woff") format('woff'), url("../font/coveredbyyourgrace-webfont.ttf") format('truetype');
+}
+/* icon Font */
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/fontawesome-webfont.eot?v=#4.0.3");
+  src: url("../font/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("../font/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("../font/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+}
 /* Public style */
 * {
   -webkit-margin-before: 0;
@@ -96,7 +112,7 @@ a img {
 }
 body {
   background: #ddd;
-  font-family: "Helvetica Neue", "Helvetica", "WenQuanYi Micro Hei", "Microsoft YaHei", Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
   font-size: 100%;
   color: #817c7c;
   line-height: 1.5;
@@ -351,11 +367,11 @@ body >header {
   width: 100%;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
-  background: #4db6ac;
+  background: #ea6753;
   color: #fff;
   padding: 1em 0 0.8em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   body >header {
     padding: 1.8em 0 1.5em;
   }
@@ -366,7 +382,7 @@ body >header >div {
   position: relative;
   overflow: hidden;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   body >header >div {
     width: 93%;
   }
@@ -385,7 +401,7 @@ body >header a {
     width: 5em;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   #imglogo {
     width: 5.5em;
   }
@@ -398,20 +414,19 @@ body >header a {
     width: 5em;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   #imglogo img {
     width: 5.5em;
   }
 }
 #textlogo {
   float: left;
-  width: 203px;
+  width: 75%;
   margin-left: 0.5em;
 }
 #textlogo h1.site-name {
-  width: 100%;
-  font-family: 'Tangerine', cursive;
-  text-shadow: 4px 4px 4px #aaa;
+  width: 86%;
+  font-family: "covered_by_your_graceregular";
   font-size: 200%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -422,7 +437,7 @@ body >header a {
     font-size: 240%;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
     font-size: 280%;
   }
@@ -436,7 +451,7 @@ body >header a {
     font-size: 100%;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   #textlogo h2.blog-motto {
     font-size: 110%;
   }
@@ -448,7 +463,7 @@ body >header a {
   top: 1em;
   padding: 0.5em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .navbar {
     display: none;
   }
@@ -466,7 +481,7 @@ header nav {
   float: left;
   width: 100%;
   font-size: 112.5%;
-  padding-top: 3em;
+  padding-top: 0.5em;
   max-height: 0.01em;
   -webkit-transition: max-height 1s ease-out;
   -moz-transition: max-height 1s ease-out;
@@ -476,10 +491,10 @@ header nav {
 }
 @media only screen and (min-width: 568px) {
   header nav {
-    width: 70%;
+    width: 50%;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   header nav {
     float: right;
     width: auto;
@@ -487,12 +502,12 @@ header nav {
     max-height: none;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   header nav ul {
     float: right;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   header nav ul li {
     float: left;
   }
@@ -500,14 +515,14 @@ header nav {
 header nav ul li a {
   padding: 0.2em 0 0.2em 1em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   header nav ul li a {
     padding: 0.2em 1.5em;
   }
 }
 header nav ul li a:hover {
-  background: #348e85;
-  color: #1de9b6;
+  background: #dd2c11;
+  color: #e9cd4c;
 }
 .shownav {
   max-height: 40em;
@@ -523,7 +538,7 @@ header nav ul li a:hover {
   width: 80%;
   padding-left: 0.5em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .search input {
     width: 8em;
     -webkit-transition: 0.5s width;
@@ -550,7 +565,7 @@ header nav ul li a:hover {
     width: 96%;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   #container {
     width: 94%;
   }
@@ -564,7 +579,7 @@ header nav ul li a:hover {
   margin: 1em 0 0;
   line-height: 1.8;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   #main {
     margin: 2em 0 0;
     width: 75%;
@@ -578,7 +593,7 @@ header nav ul li a:hover {
 }
 #main section.post {
   background: #fafafa;
-  margin-bottom: 1em;
+  margin-bottom: 0.125em;
 }
 #main section.post a {
   display: block;
@@ -596,10 +611,10 @@ header nav ul li a:hover {
   }
 }
 #main section.post a:hover {
-  border-left: 0.5em solid #4db6ac;
+  border-left: 0.5em solid #ea6753;
 }
 #main section.post a h1 {
-  color: #0091ea;
+  color: #2ca6cb;
   line-height: 2;
 }
 #main section.post a p {
@@ -625,11 +640,11 @@ header nav ul li a:hover {
   padding: 0.5em 1em;
 }
 #page-nav a {
-  color: #0091ea;
+  color: #2ca6cb;
 }
 #page-nav a:hover {
   background: #ccc;
-  color: #4db6ac;
+  color: #ea6753;
 }
 #page-nav .prev {
   float: left;
@@ -641,7 +656,7 @@ header nav ul li a:hover {
   transition: border-left 0.5s;
 }
 #page-nav .prev:hover {
-  border-left: 0.5em solid #4db6ac;
+  border-left: 0.5em solid #ea6753;
 }
 #page-nav .next {
   float: right;
@@ -659,10 +674,10 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 #page-nav .space {
-  color: #0091ea;
+  color: #2ca6cb;
 }
 /* page layout */
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .page {
     margin-left: 10% !important;
   }
@@ -694,7 +709,7 @@ header nav ul li a:hover {
   background: #fafafa;
   border-left: 0.5em solid #ccc;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .archive-title {
     margin: 2em 0;
     width: 18.5%;
@@ -704,11 +719,11 @@ header nav ul li a:hover {
 }
 .archive-title h2 {
   width: 90%;
-  color: #0091ea;
+  color: #2ca6cb;
   font-size: 120%;
 }
 .archive-title a {
-  color: #0091ea;
+  color: #2ca6cb;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -716,7 +731,7 @@ header nav ul li a:hover {
   transition: color 0.5s;
 }
 .archive-title a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -724,14 +739,14 @@ header nav ul li a:hover {
   transition: color 0.5s;
 }
 .current {
-  color: #4db6ac !important;
+  color: #ea6753 !important;
 }
 @media only screen and (min-width: 768px) {
   .archive-part {
     min-height: 200px;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .archive-part {
     width: 78% !important;
     float: right;
@@ -747,7 +762,7 @@ header nav ul li a:hover {
     width: 50%;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .archive-part section.post {
     width: 33.333%;
   }
@@ -769,11 +784,11 @@ header nav ul li a:hover {
 }
 .post a,
 .page a {
-  color: #0091ea;
+  color: #2ca6cb;
 }
 .post a:hover,
 .page a:hover {
-  color: #4db6ac;
+  color: #ea6753;
 }
 @media only screen and (min-width: 768px) {
   article header.article-info {
@@ -788,9 +803,9 @@ article header.article-info >h1 {
   word-break: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border-left: 5px solid #4db6ac;
+  border-left: 5px solid #ea6753;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   article header.article-info >h1 {
     font-size: 200%;
     padding-top: 0.3em;
@@ -889,7 +904,7 @@ article .article-content abbr {
   border-bottom: 1px dotted;
 }
 article .article-content blockquote {
-  border-left: 0.2em solid #4db6ac;
+  border-left: 0.2em solid #ea6753;
   margin: 0.65em 0 0.65em 4%;
   padding-left: 1%;
   line-height: 1.5;
@@ -949,7 +964,7 @@ article .article-content p {
   line-height: 1.7;
   margin: 0.7em 0;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   article .article-content p {
     margin: 1.2em 0;
   }
@@ -964,7 +979,7 @@ article .article-content figure img {
   vertical-align: middle;
   padding-top: 0.5em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   article .article-content img,
   article .article-content video,
   article .article-content figure img {
@@ -1151,7 +1166,7 @@ footer.article-footer {
   -ms-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .qrcode {
     width: 20em;
     height: 20em;
@@ -1191,7 +1206,7 @@ footer.article-footer {
   color: #ccc;
 }
 .qrclose:hover:before {
-  color: #0091ea !important;
+  color: #2ca6cb !important;
 }
 .overlay {
   display: none !important;
@@ -1251,7 +1266,7 @@ footer.article-footer {
 }
 .article-tags a:hover {
   color: #fff;
-  background: #0091ea;
+  background: #2ca6cb;
 }
 .article-categories {
   color: #d6d6d6;
@@ -1269,7 +1284,7 @@ footer.article-footer {
 }
 .article-category-link:hover {
   color: #fff !important;
-  background: #0091ea;
+  background: #2ca6cb;
 }
 .article-nav {
   padding: 0 10%;
@@ -1288,7 +1303,7 @@ footer.article-footer {
 }
 .article-nav .prev a:hover,
 .article-nav .next a:hover {
-  background: #0091ea;
+  background: #2ca6cb;
   color: #fff;
 }
 .article-nav .prev {
@@ -1377,7 +1392,7 @@ section.comment {
   width: 13%;
   position: fixed;
   right: 2%;
-  top: 250px;
+  top: 320px;
   overflow: hidden;
   line-height: 1.5em;
   font-size: 1em;
@@ -1413,7 +1428,7 @@ section.comment {
   transition: color 1s ease-out;
 }
 #toc.toc-aside a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   -webkit-transition: color 0.3s ease-out;
   -moz-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
@@ -1421,20 +1436,20 @@ section.comment {
   transition: color 0.3s ease-out;
 }
 .active {
-  color: #4db6ac !important;
+  color: #ea6753 !important;
 }
 .openaside {
   display: none;
   position: fixed;
-  right: 4%;
-  top: 208px;
+  right: 7.5%;
+  top: 260px;
 }
 .openaside a {
   display: block;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
-  background: #4db6ac;
+  background: #ea6753;
   padding: 0.2em 0.55em;
 }
 .openaside a::before {
@@ -1447,10 +1462,10 @@ section.comment {
   display: none;
 }
 .closeaside a {
-  color: #4db6ac;
+  color: #ea6753;
 }
 .closeaside a:hover {
-  color: #0091ea;
+  color: #2ca6cb;
 }
 .closeaside a::before {
   font-family: "FontAwesome";
@@ -1458,7 +1473,7 @@ section.comment {
   -moz-osx-font-smoothing: grayscale;
   content: "\f0c9";
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .closeaside {
     display: block;
     position: absolute;
@@ -1471,7 +1486,7 @@ section.comment {
   margin: 1em 0 0;
   padding: 0.5em 2% 1em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   #asidepart {
     position: relative;
     float: left;
@@ -1480,17 +1495,16 @@ section.comment {
   }
 }
 .asidetitle {
-  font-family: 'Philosopher', "Helvetica Neue", "Helvetica", "WenQuanYi Micro Hei", "Microsoft YaHei", Arial, sans-serif;
-  font-size: 1.5em;
-  color: #0091ea;
+  font-size: 1.1em;
+  color: #2ca6cb;
   padding: 0 0 0.3125em 0;
   border-bottom: 0.1875em solid #ccc;
 }
 .asidetitle a {
-  color: #0091ea;
+  color: #2ca6cb;
 }
 .asidetitle a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -1504,7 +1518,7 @@ section.comment {
     margin: 0 5% 0 0;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .categorieslist {
     width: 100%;
     float: none;
@@ -1519,7 +1533,7 @@ section.comment {
   padding: 0.5em 5%;
 }
 .categorieslist li a:hover {
-  color: #4db6ac;
+  color: #ea6753;
 }
 .tagslist {
   margin: 1em 0 0;
@@ -1531,7 +1545,7 @@ section.comment {
     margin: 0 5% 0 0;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .tagslist {
     width: 100%;
     float: none;
@@ -1551,11 +1565,11 @@ section.comment {
   background: #dbdbdb;
 }
 .tagslist ul li a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   background: #e6e6e6;
 }
 .rsspart {
-  background: #4db6ac;
+  background: #ea6753;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
@@ -1565,7 +1579,7 @@ section.comment {
     margin: 0 5% 0 0;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .rsspart {
     width: 100%;
     float: none;
@@ -1579,7 +1593,7 @@ section.comment {
   text-align: center;
 }
 .rsspart a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   background: #fafafa;
 }
 .rsspart a::before {
@@ -1596,7 +1610,7 @@ section.comment {
     margin: 0 5% 0 0;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .archiveslist {
     width: 100%;
     float: none;
@@ -1611,7 +1625,7 @@ section.comment {
   padding: 0.5em;
 }
 .archiveslist li a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -1634,7 +1648,7 @@ section.comment {
   float: left;
   margin: 0.3em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .archive-float li {
     float: none;
   }
@@ -1646,7 +1660,7 @@ section.comment {
     margin: 0 5% 0 0;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .tagcloudlist {
     width: 100%;
     float: none;
@@ -1659,7 +1673,7 @@ section.comment {
   float: left;
 }
 .tagcloudlist .tagcloudlist a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -1676,7 +1690,7 @@ section.comment {
     margin: 0 5% 0 0;
   }
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .linkslist {
     width: 100%;
     float: none;
@@ -1693,7 +1707,7 @@ section.comment {
   padding: 0 3%;
 }
 .linkslist ul a:hover {
-  color: #4db6ac;
+  color: #ea6753;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -1702,9 +1716,8 @@ section.comment {
 }
 footer {
   margin-top: 1em;
-  background: #212121;
+  background: #1f1f1f;
   padding: 0 2% 0.5em;
-  position: relative;
 }
 #footer {
   width: 95%;
@@ -1768,7 +1781,7 @@ footer {
   }
 }
 .info {
-  font-family: 'Covered By Your Grace', cursive;
+  font-family: "covered_by_your_graceregular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 150%;
@@ -1811,13 +1824,13 @@ footer {
   font-size: 180%;
   padding: 0.5em;
 }
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1024px) {
   .social-font a {
     padding: 0.3em;
   }
 }
 .social-font a:hover:before {
-  color: #0091ea;
+  color: #2ca6cb;
 }
 .social-font a[title="weibo"]::before,
 .social-font a[title="twitter"]::before,
@@ -1846,7 +1859,7 @@ footer {
 .copyright {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Helvetica Neue", "Helvetica", "WenQuanYi Micro Hei", "Microsoft YaHei", Arial, sans-serif;
+  font-family: "covered_by_your_graceregular";
   width: 100%;
   color: #fff;
   text-align: center;
@@ -1860,7 +1873,7 @@ footer {
   color: #fff;
 }
 .copyright a:hover {
-  color: #0091ea;
+  color: #2ca6cb;
 }
 .article-gallery {
   background: #fafafa;
@@ -1884,42 +1897,4 @@ img
 .article-gallery-img .loaded {
   position: absolute;
   display: block;
-}
-.st-result-container {
-  width: 70%;
-}
-.st-result-text {
-  background: #fafafa;
-  display: block;
-  border-left: 0.5em solid #ccc;
-  -webkit-transition: border-left 0.45s;
-  -moz-transition: border-left 0.45s;
-  -o-transition: border-left 0.45s;
-  -ms-transition: border-left 0.45s;
-  -webkit-transition: border-left 0.45s;
-  -moz-transition: border-left 0.45s;
-  -o-transition: border-left 0.45s;
-  -ms-transition: border-left 0.45s;
-  transition: border-left 0.45s;
-  padding: 0.5em;
-}
-.st-result-text:hover {
-  border-left: 0.5em solid #4db6ac;
-}
-.st-result-text h3 a {
-  color: #0091ea;
-  line-height: 1.5;
-  font-size: 22px;
-}
-.st-snippet em {
-  font-weight: bold;
-  color: #4db6ac;
-}
-@media only screen and (min-width: 1070px) {
-  .st-result-text {
-    padding: 1em;
-  }
-  .st-result-container {
-    width: 100%;
-  }
 }
